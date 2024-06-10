@@ -9,8 +9,8 @@ float bias_Y = 0;
 float bias_Z = 0;
 float delta_bias = 0.1;
 
-GLfloat light_position[] = {-0.5f, -0.5f, -1.0f, 0.0f};
-GLfloat diffuse_color[] = {0.0f, 0.0f, 0.2f, 0.1f};
+GLfloat light_position[] = { -0.5f, 1.0f, -1.0f, 0.0f };
+GLfloat diffuse_color[] = { 0.0f, 0.0f, 0.8f, 0.1f };
 
 int main(void)
 {
@@ -102,7 +102,7 @@ int main(void)
 
             };
 
-            if (key == 'n'  or key == 'N') {
+            if (key == 'n' or key == 'N') {
                 bias_Y -= delta_bias;
 
             };
